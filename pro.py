@@ -16,10 +16,10 @@ BLACK = (0, 0, 0)
 GREEN = (0, 255, 0)
 
 # Game variables
-player_speed = 5
+player_speed = 7
 bullet_speed = 7
-enemy_speed = 2
-enemy_drop_speed = 10
+enemy_speed = 3
+enemy_drop_speed = 7
 score = 0
 
 # Fonts
@@ -86,7 +86,7 @@ bullets = pygame.sprite.Group()
 enemies = pygame.sprite.Group()
 
 # Create some enemies
-for i in range(10):
+for i in range(100):
     enemy = Enemy()
     all_sprites.add(enemy)
     enemies.add(enemy)
